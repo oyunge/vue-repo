@@ -1,10 +1,12 @@
 <html>
     <head>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
     </head>
     <body>
   
-           <div id="app">
+           <!-- <div id="app">
 
            TEMPLATE SYNTAX 
             {{ message }}
@@ -14,7 +16,7 @@
 
             <img v-bind:src = "path">
             <a v-bind:href="link">click on google</a>
-        </div> 
+        </div>  -->
 
             <!-- METHODS -->
             <!-- <div id="app">
@@ -31,7 +33,42 @@
              <img v-bind:src=" path ">
               </div> -->
 
-      
+              <!-- VUE EVENTS -->
+              <!-- <div id="app">
+                  {{ temp }}
+            <button v-on:click="increase">+</button>
+            <button v-on:click="decrease">-</button>
+              </div> -->
+
+              <!-- EVENT MODIFIER -->
+              <!-- it enables someone to click only once  -->
+                <!-- <div id="app">
+                  {{ temp }}
+            <button v-on:click.once="increase">+</button>
+            <button v-on:click.once="decrease">-</button>
+              </div>  -->
+
+                 <!-- KEY PRESSED EVENT -->
+       <!-- <div id="app">
+              
+               <input type="text" v-on:keyup="keypressed"/>
+           
+              </div>   -->
+
+              <!-- TWO WAY DATA BINDING  -->
+              <!-- <div id="app">
+              
+                <input type="text" v-model="message"/>
+                  {{message}}
+            
+               </div>   -->
+
+                <!-- DYNAMIC CSS CLASSES assignment-->
+            <!-- <div id="app">
+              <input type="text" gate()/>
+              {{gate}}
+              <button gate()>click</button>
+            </div> -->
 
 <script type="text/javascript" src="index.js"></script>
     </body>
