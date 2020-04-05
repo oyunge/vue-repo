@@ -150,3 +150,102 @@
 
 
     // });
+
+            // LOOP
+            // var app = new Vue ({
+            //  el:'#app',
+            //  data:{
+               
+            //     students:["john", "sam" ,"john" ,"bruce" ,"joash"],
+
+            //  }
+
+
+            // });
+
+
+            // LOOP /ARRAY OF OBJECTS
+            // var app= new Vue({
+            // el:'#app',
+            // data:{
+            //  players:[
+            //      {name:'john' ,score:'5'},
+            //      {name:'sam' ,score:'3'},
+            //      {name:'alex' ,score:'6'},
+            //      {name:'joash' ,score:'2'},
+            //  ],
+
+
+            // }
+            // });
+
+
+                //   VUE INSTANCES /HOW TO ACCESS INFORMATION BTWN TWO DIV INSTANCES
+                    //    var app = new Vue({
+                    //      el:'#app',
+                    //      data:{
+                        
+                    //      value:1000,
+                    //      price:200,
+                    //      },
+                    //        methods:{
+
+
+
+                    //        }
+                    //    });
+
+                    //    var demo = new Vue({
+                    //        el:'#demo',
+                    //        data:{
+                    //        value:2000,
+                    //        },
+                    //        methods:{
+                    //         f1:function(){
+                    //             var z;
+                    //             z = app.price + this.value;
+                    //             return z;
+                    //         },
+                    //        }
+                    //    });
+
+
+                                // VUE COMPONENT
+                        //   Vue.component("mycomponent" ,{
+                        //     template:'<p>This is my component {{name}} - {{temperature}} <button v-on:click="changetemp()" >click Here</button></p> ',
+
+                        //     data:function(){
+                        //       return{
+                        //           name:'Joash',
+                        //           temperature:100,
+                        //       }
+                        //     },
+                        //     methods:{
+                        //         changetemp:function(){
+                        //              this.temperature=this.temperature + 10;
+                        //         },
+                        //     },
+                        //   });
+                        //   var app = new Vue({
+                        //          el:'#app',
+                        //          data:{
+                                
+                        //          value:1000,
+                        //          price:200,
+                        //          },
+                        //         });
+
+                                       //   VUE REFERENCING
+                                var app = new Vue({
+                                    el:'#app',
+                                    data:{
+                                    
+                                      intr:'',
+                                    },
+                                    methods:{
+                                        calc:function(){
+                                           this.intr = (this.$refs.principal.value * this.$refs.year.value * this.$refs.rate.value )/100;
+                                        }
+                                    }
+
+                                });
